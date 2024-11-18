@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #B8860B;
+  --color-gold-light: #FFD700;
+  --color-gold-dark: #8B6914;
+  --color-dark: #0A0A0A;
+  --color-dark-100: #121212;
+  --color-dark-200: #1A1A1A;
+  --color-dark-300: #242424;
+}
+
+body {
+  @apply bg-dark text-gray-100;
+  position: relative;
+  min-height: 100vh;
+}
+
+.cvp-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cvp-text {
+  position: absolute;
+  font-size: 180px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.05);
+  white-space: nowrap;
+  transform: rotate(-30deg);
+  user-select: none;
+}
